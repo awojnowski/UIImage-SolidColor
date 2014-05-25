@@ -22,7 +22,7 @@
     
     [color set];
     
-    CGContextTranslateCTM(context, 0, self.bounds.size.height);
+    CGContextTranslateCTM(context, 0, size.height);
     CGContextScaleCTM(context, 1.0, -1.0);
     CGContextClipToMask(context, bounds, [self CGImage]);
     CGContextFillRect(context, bounds);
